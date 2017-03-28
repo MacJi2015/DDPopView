@@ -20,6 +20,7 @@
 		B8A8095A1E8A35E000F317F5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B8A809511E8A35E000F317F5 /* README.md */; };
 		B8A8095B1E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809551E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		B8A8095C1E8A35E000F317F5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809571E8A35E000F317F5 /* UIView+SDAutoLayout.m */; };
+		B8A809641E8A6E4100F317F5 /* imags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A809631E8A6E4100F317F5 /* imags.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B8A809551E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
 		B8A809561E8A35E000F317F5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		B8A809571E8A35E000F317F5 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		B8A809631E8A6E4100F317F5 /* imags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = imags.xcassets; path = DDPopView/imags.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				B8A8094D1E8A35E000F317F5 /* CustomAlertView.h */,
 				B8A8094E1E8A35E000F317F5 /* CustomAlertView.m */,
 				B8A8094F1E8A35E000F317F5 /* SDAutoLayout */,
+				B8A809631E8A6E4100F317F5 /* imags.xcassets */,
 			);
 			name = DDPopView;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				B8A809091E8A0DC300F317F5 /* Assets.xcassets in Resources */,
 				B8A809591E8A35E000F317F5 /* LICENSE in Resources */,
 				B8A809071E8A0DC300F317F5 /* Main.storyboard in Resources */,
+				B8A809641E8A6E4100F317F5 /* imags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
