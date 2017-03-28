@@ -46,46 +46,44 @@
         [[UIApplication sharedApplication].keyWindow addSubview:self];
         
         //中间弹框的view
-        UIView *popView = [[UIView alloc] initWithFrame:CGRectMake(0,0,271,320)];
+        UIView *popView = [[UIView alloc] initWithFrame:CGRectMake(0,0,271,280)];
         popView.backgroundColor = [UIColor whiteColor];
         cornerRadiusView(popView, 5);
         [self addSubview:popView];
         
-        UILabel *lab = [[UILabel alloc] init];
-        lab.text = @"通知已发送";
-        lab.textColor = [UIColor blackColor];
-        lab.font = [UIFont boldSystemFontOfSize:17];
-        lab.textAlignment = NSTextAlignmentCenter;
-        [popView addSubview:lab];
-        lab.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(popView,15).heightIs(12);
-        
         UIImageView *meetImage =[[UIImageView alloc] init];
-        meetImage.image = [UIImage imageNamed:@"meet"];
+        meetImage.image = [UIImage imageNamed:@"image1"];
         [popView addSubview:meetImage];
-        meetImage.sd_layout.leftSpaceToView(popView,111).topSpaceToView(lab,19).widthIs(49).heightIs(49);
+        meetImage.sd_layout.leftSpaceToView(popView,self.frame.size.width/2-100).topSpaceToView(popView,19).widthIs(100).heightIs(80);
         
-        UILabel *addLabel = [UILabel new];
-        addLabel.text = @"事件已添加至伙伴日历";
-        addLabel.textColor = [UIColor blackColor] ;
-        addLabel.font = [UIFont systemFontOfSize:14];
-        [popView addSubview:addLabel];
-        addLabel.textAlignment = NSTextAlignmentCenter;
-        addLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(meetImage,24).heightIs(14);
+        UIImageView *meetImage2 =[[UIImageView alloc] init];
+        meetImage2.image = [UIImage imageNamed:@"image2"];
+        [popView addSubview:meetImage2];
+        meetImage2.sd_layout.rightSpaceToView(popView,self.frame.size.width/2-100).topSpaceToView(popView,19).widthIs(100).heightIs(80);
         
         UILabel *lookLabel = [UILabel new];
         lookLabel.textColor = [UIColor lightGrayColor];
-        lookLabel.text = @"可在消息中心中查看";
+        lookLabel.text = @"多多理财已正式接入新网银行存管";
         lookLabel.font = [UIFont systemFontOfSize:12];
         [popView addSubview:lookLabel];
         lookLabel.textAlignment = NSTextAlignmentCenter;
-        lookLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(addLabel,27).heightIs(12);
+        lookLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(meetImage,2).heightIs(12);
+        
+        UILabel *addLabel = [UILabel new];
+        addLabel.text = @"安全理财，坐享收益";
+        addLabel.textColor = [UIColor redColor] ;
+        addLabel.font = [UIFont systemFontOfSize:20];
+        [popView addSubview:addLabel];
+        addLabel.textAlignment = NSTextAlignmentCenter;
+        addLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(lookLabel,24).heightIs(14);
         
         UIButton *calendarBtn = [UIButton new];
         calendarBtn.tag =100;
-        calendarBtn.backgroundColor = [UIColor blackColor];
+        calendarBtn.backgroundColor = [UIColor redColor];
         [popView addSubview:calendarBtn];
-        calendarBtn.sd_layout.leftSpaceToView(popView,10).rightSpaceToView(popView,10).topSpaceToView(lookLabel,25).heightIs(50);
-        [calendarBtn setTitle:@"查看日历" forState:UIControlStateNormal];
+        calendarBtn.sd_layout.topSpaceToView(addLabel,25).heightIs(40).widthIs(150);
+        calendarBtn.sd_layout.centerXIs(self.frame.size.width/2);
+        [calendarBtn setTitle:@"立即开通" forState:UIControlStateNormal];
         [calendarBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         calendarBtn.layer.shadowOffset =  CGSizeMake(1, 1);
         calendarBtn.layer.shadowOpacity = 0.8;
@@ -93,15 +91,34 @@
         calendarBtn.layer.cornerRadius= 5;
         [calendarBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
+        UILabel *bottomLabel = [UILabel new];
+        bottomLabel.text = @"您需要先开通银行存管的账户，才可进行投资。";
+        bottomLabel.textColor = [UIColor lightGrayColor] ;
+        bottomLabel.font = [UIFont systemFontOfSize:10];
+        [popView addSubview:bottomLabel];
+        bottomLabel.textAlignment = NSTextAlignmentLeft;
+        bottomLabel.sd_layout.topSpaceToView(calendarBtn,25).leftSpaceToView(popView,15).heightIs(10).widthIs(self.frame.size.width-10);
         
-        UIButton *knowBtn = [UIButton new];
-        knowBtn.backgroundColor = WhiteColor;
-        [popView addSubview:knowBtn];
-        knowBtn.tag =101;
-        knowBtn.sd_layout.leftSpaceToView(popView,10).rightSpaceToView(popView,10).topSpaceToView(calendarBtn,25).heightIs(50);
-        [knowBtn setTitle:@"知道了" forState:UIControlStateNormal];
-        [knowBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-        [knowBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+        UILabel *bottomLabel2 = [UILabel new];
+        bottomLabel2.text = @"充值，提现，转让。";
+        bottomLabel2.textColor = [UIColor lightGrayColor] ;
+        bottomLabel2.font = [UIFont systemFontOfSize:10];
+        [popView addSubview:bottomLabel2];
+        bottomLabel2.textAlignment = NSTextAlignmentLeft;
+        bottomLabel2.sd_layout.topSpaceToView(bottomLabel,2).leftSpaceToView(popView,15).heightIs(10).widthIs(self.frame.size.width-10);
+        
+        UIButton *cancelBtn = [UIButton new];
+        cancelBtn.tag =101;
+        UIImage *image = [UIImage imageNamed:@"cancelBtn"];
+        [cancelBtn setBackgroundImage:image forState:UIControlStateNormal];
+        [popView addSubview:cancelBtn];
+        cancelBtn.sd_layout.topSpaceToView(popView,0).rightSpaceToView(popView,0).heightIs(40).widthIs(40);
+        cancelBtn.sd_layout.centerXIs(self.frame.size.width/2);
+//        cancelBtn.layer.shadowOffset =  CGSizeMake(1, 1);
+//        cancelBtn.layer.shadowOpacity = 0.8;
+        cancelBtn.layer.shadowColor =  [UIColor blackColor].CGColor;
+        cancelBtn.layer.cornerRadius= 20;
+        [cancelBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
         [self show:YES];
 

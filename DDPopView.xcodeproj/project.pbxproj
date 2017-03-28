@@ -120,7 +120,6 @@
 				B8A809021E8A0DC300F317F5 /* ViewController.h */,
 				B8A809031E8A0DC300F317F5 /* ViewController.m */,
 				B8A809051E8A0DC300F317F5 /* Main.storyboard */,
-				B8A809081E8A0DC300F317F5 /* Assets.xcassets */,
 				B8A8090A1E8A0DC300F317F5 /* LaunchScreen.storyboard */,
 				B8A8090D1E8A0DC300F317F5 /* Info.plist */,
 				B8A808FC1E8A0DC300F317F5 /* Supporting Files */,
@@ -131,6 +130,7 @@
 		B8A808FC1E8A0DC300F317F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8A809081E8A0DC300F317F5 /* Assets.xcassets */,
 				B8A808FD1E8A0DC300F317F5 /* main.m */,
 			);
 			name = "Supporting Files";

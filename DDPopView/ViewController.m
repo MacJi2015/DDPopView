@@ -34,6 +34,7 @@
 {
     
     CustomAlertView *alert = [[CustomAlertView alloc] initWithAlertViewHeight:320];
+    alert.center=self.view.center;
     
     alert.ButtonClick = ^void(UIButton*button){
         NSLog(@"%ld",(long)button.tag);
