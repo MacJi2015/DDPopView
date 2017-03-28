@@ -15,6 +15,8 @@
 		B8A8090C1E8A0DC300F317F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A8090A1E8A0DC300F317F5 /* LaunchScreen.storyboard */; };
 		B8A809171E8A0DC300F317F5 /* DDPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809161E8A0DC300F317F5 /* DDPopViewTests.m */; };
 		B8A809221E8A0DC300F317F5 /* DDPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809211E8A0DC300F317F5 /* DDPopViewUITests.m */; };
+		B8A809311E8A0E1100F317F5 /* SDAutoLayout in Resources */ = {isa = PBXBuildFile; fileRef = B8A809301E8A0E1100F317F5 /* SDAutoLayout */; };
+		B8A809341E8A0E1F00F317F5 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809331E8A0E1F00F317F5 /* CustomAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		B8A8091D1E8A0DC300F317F5 /* DDPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A809211E8A0DC300F317F5 /* DDPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPopViewUITests.m; sourceTree = "<group>"; };
 		B8A809231E8A0DC300F317F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A809301E8A0E1100F317F5 /* SDAutoLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDAutoLayout; sourceTree = "<group>"; };
+		B8A809321E8A0E1F00F317F5 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		B8A809331E8A0E1F00F317F5 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		B8A808FB1E8A0DC300F317F5 /* DDPopView */ = {
 			isa = PBXGroup;
 			children = (
+				B8A8092F1E8A0DCD00F317F5 /* DDPopView */,
 				B8A808FF1E8A0DC300F317F5 /* AppDelegate.h */,
 				B8A809001E8A0DC300F317F5 /* AppDelegate.m */,
 				B8A809021E8A0DC300F317F5 /* ViewController.h */,
@@ -138,6 +144,16 @@
 				B8A809231E8A0DC300F317F5 /* Info.plist */,
 			);
 			path = DDPopViewUITests;
+			sourceTree = "<group>";
+		};
+		B8A8092F1E8A0DCD00F317F5 /* DDPopView */ = {
+			isa = PBXGroup;
+			children = (
+				B8A809321E8A0E1F00F317F5 /* CustomAlertView.h */,
+				B8A809331E8A0E1F00F317F5 /* CustomAlertView.m */,
+				B8A809301E8A0E1100F317F5 /* SDAutoLayout */,
+			);
+			name = DDPopView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +267,7 @@
 			files = (
 				B8A8090C1E8A0DC300F317F5 /* LaunchScreen.storyboard in Resources */,
 				B8A809091E8A0DC300F317F5 /* Assets.xcassets in Resources */,
+				B8A809311E8A0E1100F317F5 /* SDAutoLayout in Resources */,
 				B8A809071E8A0DC300F317F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +295,7 @@
 			files = (
 				B8A809041E8A0DC300F317F5 /* ViewController.m in Sources */,
 				B8A809011E8A0DC300F317F5 /* AppDelegate.m in Sources */,
+				B8A809341E8A0E1F00F317F5 /* CustomAlertView.m in Sources */,
 				B8A808FE1E8A0DC300F317F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
