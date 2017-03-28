@@ -15,11 +15,11 @@
 		B8A8090C1E8A0DC300F317F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A8090A1E8A0DC300F317F5 /* LaunchScreen.storyboard */; };
 		B8A809171E8A0DC300F317F5 /* DDPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809161E8A0DC300F317F5 /* DDPopViewTests.m */; };
 		B8A809221E8A0DC300F317F5 /* DDPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809211E8A0DC300F317F5 /* DDPopViewUITests.m */; };
-		B8A8093C1E8A15A100F317F5 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A8093A1E8A15A100F317F5 /* CustomAlertView.m */; };
-		B8A809471E8A2FEE00F317F5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B8A8093F1E8A2FEE00F317F5 /* LICENSE */; };
-		B8A809481E8A2FEE00F317F5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B8A809401E8A2FEE00F317F5 /* README.md */; };
-		B8A809491E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809441E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.m */; };
-		B8A8094A1E8A2FEE00F317F5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809461E8A2FEE00F317F5 /* UIView+SDAutoLayout.m */; };
+		B8A809581E8A35E000F317F5 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A8094E1E8A35E000F317F5 /* CustomAlertView.m */; };
+		B8A809591E8A35E000F317F5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B8A809501E8A35E000F317F5 /* LICENSE */; };
+		B8A8095A1E8A35E000F317F5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B8A809511E8A35E000F317F5 /* README.md */; };
+		B8A8095B1E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809551E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		B8A8095C1E8A35E000F317F5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A809571E8A35E000F317F5 /* UIView+SDAutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +56,14 @@
 		B8A8091D1E8A0DC300F317F5 /* DDPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A809211E8A0DC300F317F5 /* DDPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPopViewUITests.m; sourceTree = "<group>"; };
 		B8A809231E8A0DC300F317F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8A809391E8A15A100F317F5 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAlertView.h; path = DDPopView/CustomAlertView.h; sourceTree = "<group>"; };
-		B8A8093A1E8A15A100F317F5 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAlertView.m; path = DDPopView/CustomAlertView.m; sourceTree = "<group>"; };
-		B8A8093F1E8A2FEE00F317F5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B8A809401E8A2FEE00F317F5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B8A809431E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
-		B8A809441E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
-		B8A809451E8A2FEE00F317F5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
-		B8A809461E8A2FEE00F317F5 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		B8A8094D1E8A35E000F317F5 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAlertView.h; path = DDPopView/CustomAlertView.h; sourceTree = "<group>"; };
+		B8A8094E1E8A35E000F317F5 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAlertView.m; path = DDPopView/CustomAlertView.m; sourceTree = "<group>"; };
+		B8A809501E8A35E000F317F5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B8A809511E8A35E000F317F5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B8A809541E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		B8A809551E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		B8A809561E8A35E000F317F5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		B8A809571E8A35E000F317F5 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 		B8A808FB1E8A0DC300F317F5 /* DDPopView */ = {
 			isa = PBXGroup;
 			children = (
-				B8A809351E8A152B00F317F5 /* DDPopView */,
+				B8A8094C1E8A35CF00F317F5 /* DDPopView */,
 				B8A808FF1E8A0DC300F317F5 /* AppDelegate.h */,
 				B8A809001E8A0DC300F317F5 /* AppDelegate.m */,
 				B8A809021E8A0DC300F317F5 /* ViewController.h */,
@@ -154,41 +154,42 @@
 			path = DDPopViewUITests;
 			sourceTree = "<group>";
 		};
-		B8A809351E8A152B00F317F5 /* DDPopView */ = {
+		B8A8094C1E8A35CF00F317F5 /* DDPopView */ = {
 			isa = PBXGroup;
 			children = (
-				B8A8093E1E8A2FEE00F317F5 /* SDAutoLayout */,
-				B8A809391E8A15A100F317F5 /* CustomAlertView.h */,
-				B8A8093A1E8A15A100F317F5 /* CustomAlertView.m */,
+				B8A8094D1E8A35E000F317F5 /* CustomAlertView.h */,
+				B8A8094E1E8A35E000F317F5 /* CustomAlertView.m */,
+				B8A8094F1E8A35E000F317F5 /* SDAutoLayout */,
 			);
 			name = DDPopView;
 			sourceTree = "<group>";
 		};
-		B8A8093E1E8A2FEE00F317F5 /* SDAutoLayout */ = {
+		B8A8094F1E8A35E000F317F5 /* SDAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				B8A8093F1E8A2FEE00F317F5 /* LICENSE */,
-				B8A809401E8A2FEE00F317F5 /* README.md */,
-				B8A809411E8A2FEE00F317F5 /* SDAutoLayoutDemo */,
+				B8A809501E8A35E000F317F5 /* LICENSE */,
+				B8A809511E8A35E000F317F5 /* README.md */,
+				B8A809521E8A35E000F317F5 /* SDAutoLayoutDemo */,
 			);
-			path = SDAutoLayout;
+			name = SDAutoLayout;
+			path = DDPopView/SDAutoLayout;
 			sourceTree = "<group>";
 		};
-		B8A809411E8A2FEE00F317F5 /* SDAutoLayoutDemo */ = {
+		B8A809521E8A35E000F317F5 /* SDAutoLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B8A809421E8A2FEE00F317F5 /* SDAutoLayout */,
+				B8A809531E8A35E000F317F5 /* SDAutoLayout */,
 			);
 			path = SDAutoLayoutDemo;
 			sourceTree = "<group>";
 		};
-		B8A809421E8A2FEE00F317F5 /* SDAutoLayout */ = {
+		B8A809531E8A35E000F317F5 /* SDAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				B8A809431E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.h */,
-				B8A809441E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.m */,
-				B8A809451E8A2FEE00F317F5 /* UIView+SDAutoLayout.h */,
-				B8A809461E8A2FEE00F317F5 /* UIView+SDAutoLayout.m */,
+				B8A809541E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.h */,
+				B8A809551E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m */,
+				B8A809561E8A35E000F317F5 /* UIView+SDAutoLayout.h */,
+				B8A809571E8A35E000F317F5 /* UIView+SDAutoLayout.m */,
 			);
 			path = SDAutoLayout;
 			sourceTree = "<group>";
@@ -304,7 +305,7 @@
 			files = (
 				B8A8090C1E8A0DC300F317F5 /* LaunchScreen.storyboard in Resources */,
 				B8A809091E8A0DC300F317F5 /* Assets.xcassets in Resources */,
-				B8A809471E8A2FEE00F317F5 /* LICENSE in Resources */,
+				B8A809591E8A35E000F317F5 /* LICENSE in Resources */,
 				B8A809071E8A0DC300F317F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,11 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A809041E8A0DC300F317F5 /* ViewController.m in Sources */,
-				B8A8094A1E8A2FEE00F317F5 /* UIView+SDAutoLayout.m in Sources */,
+				B8A8095C1E8A35E000F317F5 /* UIView+SDAutoLayout.m in Sources */,
 				B8A809011E8A0DC300F317F5 /* AppDelegate.m in Sources */,
-				B8A809481E8A2FEE00F317F5 /* README.md in Sources */,
-				B8A8093C1E8A15A100F317F5 /* CustomAlertView.m in Sources */,
-				B8A809491E8A2FEE00F317F5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				B8A8095A1E8A35E000F317F5 /* README.md in Sources */,
+				B8A809581E8A35E000F317F5 /* CustomAlertView.m in Sources */,
+				B8A8095B1E8A35E000F317F5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				B8A808FE1E8A0DC300F317F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
