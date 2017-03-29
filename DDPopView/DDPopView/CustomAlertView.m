@@ -42,11 +42,11 @@
             self.bGView =view;
         }
         
-        self.frame = CGRectMake(52*SCREEN_PRESENT,174*SCREEN_PRESENT,271,320);
+        self.frame = CGRectMake(52*SCREEN_PRESENT,174*SCREEN_PRESENT,250,320);
         [[UIApplication sharedApplication].keyWindow addSubview:self];
         
         //中间弹框的view
-        UIView *popView = [[UIView alloc] initWithFrame:CGRectMake(0,0,271,280)];
+        UIView *popView = [[UIView alloc] initWithFrame:CGRectMake(0,0,250,230)];
         popView.backgroundColor = [UIColor whiteColor];
         cornerRadiusView(popView, 5);
         [self addSubview:popView];
@@ -54,17 +54,17 @@
         UIImageView *meetImage =[[UIImageView alloc] init];
         meetImage.image = [UIImage imageNamed:@"image1"];
         [popView addSubview:meetImage];
-        meetImage.sd_layout.leftSpaceToView(popView,self.frame.size.width/2-100).topSpaceToView(popView,19).widthIs(100).heightIs(80);
+        meetImage.sd_layout.leftSpaceToView(popView,20).topSpaceToView(popView,19).widthIs(100).heightIs(24);
         
         UIImageView *meetImage2 =[[UIImageView alloc] init];
         meetImage2.image = [UIImage imageNamed:@"image2"];
         [popView addSubview:meetImage2];
-        meetImage2.sd_layout.rightSpaceToView(popView,self.frame.size.width/2-100).topSpaceToView(popView,19).widthIs(100).heightIs(80);
+        meetImage2.sd_layout.rightSpaceToView(popView,20).topSpaceToView(popView,19).widthIs(100).heightIs(24);
         
         UILabel *lookLabel = [UILabel new];
         lookLabel.textColor = [UIColor lightGrayColor];
         lookLabel.text = @"多多理财已正式接入新网银行存管";
-        lookLabel.font = [UIFont systemFontOfSize:12];
+        lookLabel.font = [UIFont systemFontOfSize:10];
         [popView addSubview:lookLabel];
         lookLabel.textAlignment = NSTextAlignmentCenter;
         lookLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(meetImage,2).heightIs(12);
@@ -75,19 +75,16 @@
         addLabel.font = [UIFont systemFontOfSize:20];
         [popView addSubview:addLabel];
         addLabel.textAlignment = NSTextAlignmentCenter;
-        addLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(lookLabel,24).heightIs(14);
+        addLabel.sd_layout.leftSpaceToView(popView,15).rightSpaceToView(popView,15).topSpaceToView(lookLabel,30).heightIs(14);
         
         UIButton *calendarBtn = [UIButton new];
         calendarBtn.tag =100;
         calendarBtn.backgroundColor = [UIColor redColor];
         [popView addSubview:calendarBtn];
-        calendarBtn.sd_layout.topSpaceToView(addLabel,25).heightIs(40).widthIs(150);
+        calendarBtn.sd_layout.topSpaceToView(addLabel,30).heightIs(40).widthIs(150);
         calendarBtn.sd_layout.centerXIs(self.frame.size.width/2);
         [calendarBtn setTitle:@"立即开通" forState:UIControlStateNormal];
         [calendarBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        calendarBtn.layer.shadowOffset =  CGSizeMake(1, 1);
-        calendarBtn.layer.shadowOpacity = 0.8;
-        calendarBtn.layer.shadowColor =  [UIColor blackColor].CGColor;
         calendarBtn.layer.cornerRadius= 5;
         [calendarBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -111,8 +108,8 @@
         cancelBtn.tag =101;
         UIImage *image = [UIImage imageNamed:@"cancelBtn"];
         [cancelBtn setBackgroundImage:image forState:UIControlStateNormal];
-        [popView addSubview:cancelBtn];
-        cancelBtn.sd_layout.topSpaceToView(popView,0).rightSpaceToView(popView,0).heightIs(40).widthIs(40);
+        [self addSubview:cancelBtn];
+        cancelBtn.sd_layout.topSpaceToView(popView,20).heightIs(40).widthIs(40);
         cancelBtn.sd_layout.centerXIs(self.frame.size.width/2);
 //        cancelBtn.layer.shadowOffset =  CGSizeMake(1, 1);
 //        cancelBtn.layer.shadowOpacity = 0.8;
