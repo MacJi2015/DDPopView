@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DDPopView"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.summary      = "A short description of DDPopView."
 
   # This description is used to generate tags and improve search results.
@@ -93,9 +93,9 @@ Pod::Spec.new do |s|
 
   s.source_files  ="DDPopView/DDPopView/**/*.{h,m,mm,c}"
 
-  #s.resources = {
-   # 'DDPopView' => ['DDPopView/DDPopView/**/*.{storyboard,xcassets,xib,png}']
-  #} 
+  s.resource_bundles = {
+    'DDPopView' => ['DDPopView/DDPopView/**/*.{storyboard,xcassets,xib,png}']
+  } 
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
