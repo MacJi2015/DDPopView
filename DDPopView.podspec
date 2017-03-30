@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DDPopView"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "A short description of DDPopView."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-		DDPopView
+	         my first podspec
                    DESC
 
   s.homepage     = "https://github.com/MacJi2015/DDPopView"
