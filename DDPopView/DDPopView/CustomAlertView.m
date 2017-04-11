@@ -97,7 +97,7 @@
         bottomLabel.sd_layout.topSpaceToView(calendarBtn,25).leftSpaceToView(popView,15).heightIs(10).widthIs(self.frame.size.width-10);
         
         UILabel *bottomLabel2 = [UILabel new];
-        bottomLabel2.text = @"充值，提现，转让。";
+        bottomLabel2.text = @"充值,提现,转让。";
         bottomLabel2.textColor = [UIColor lightGrayColor] ;
         bottomLabel2.font = [UIFont systemFontOfSize:10];
         [popView addSubview:bottomLabel2];
